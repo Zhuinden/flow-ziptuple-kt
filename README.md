@@ -1,8 +1,6 @@
 # Flow-ZipTuple-KT
 
-Ability to zip flows from 3 to 11 arity tuples.
-
-(12 to 16 was freezing the Kotlin compiler, so those can be replaced with `zipArray`.)
+Ability to zip flows from 3 to 16 arity tuples.
 
 ``` kotlin
 zipTuple(flow1, flow2, flow3)
@@ -44,14 +42,14 @@ and then, add the dependency to your module's `build.gradle.kts` (or `build.grad
 
 ``` kotlin
 // build.gradle.kts
-implementation("com.github.Zhuinden:flow-ziptuple-kt:1.0.0")
+implementation("com.github.Zhuinden:flow-ziptuple-kt:1.1.0")
 ```
 
 or
 
 ``` groovy
 // build.gradle
-implementation 'com.github.Zhuinden:flow-ziptuple-kt:1.0.0'
+implementation 'com.github.Zhuinden:flow-ziptuple-kt:1.1.0'
 ```
 
 ## License
