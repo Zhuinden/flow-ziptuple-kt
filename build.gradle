@@ -24,7 +24,7 @@ repositories {
 }
 
 dependencies {
-    api 'com.github.Zhuinden:tuples-kt:1.1.0'
+    api 'com.github.Zhuinden:tuples-kt:1.1.1'
     api 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.2'
 
     testImplementation "junit:junit:4.13.1"
@@ -52,7 +52,7 @@ publishing {
         maven(MavenPublication) {
             groupId = 'com.github.Zhuinden'
             artifactId = 'flow-ziptuple-kt'
-            version = '1.2.0'
+            version = '1.2.1'
 
             from components.java
             artifact sourcesJar
@@ -69,10 +69,14 @@ compileKotlin {
     kotlinOptions {
         jvmTarget = "1.6"
     }
+    
+    kotlinOptions.moduleName = "com.zhuinden.flowziptuplekt"
 }
 
 compileTestKotlin {
     kotlinOptions {
         jvmTarget = "1.6"
     }
+    
+    kotlinOptions.moduleName = "com.zhuinden.flowziptuplekt"
 }
